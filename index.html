@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Game</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <div id="box" >
+        <h1  id="header">Score:<span id="score">0</span></h1>
+        <h3><br><br>press Space to jump</h3>
+       <div id="road" class="animation1"></div>
+       <div id="city" class="animation1"></div>
+       <div id="man">
+           <img src="dinosaur1.png" id="dino" >
+           
+        </div>
+        <div id="obstacle" >
+            <img id="block" src="obstacle.gif">
+       </div>
+       <script src="script.js"></script>
+    </div>
+    <input type="text" id="input" onkeydown="pujan(event)" autofocus>
+</body>
+</html>

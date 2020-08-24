@@ -1,0 +1,72 @@
+@keyframes road{
+    100%{
+        transform: translateX(-60%);
+    }
+}
+@keyframes pujan{
+    45%{bottom:40%;}
+    55%{bottom:40%;}
+    100%{bottom:13%;}
+}
+*{
+    overflow: hidden;
+}
+#box{
+    background-image: url("sky.jpg");
+    background-size: cover;
+    position: absolute;
+    display:flex;
+    height:95%;
+    width: 100%;background-color: red;
+    user-select: none;-moz-user-select: none;z-index: 1;
+}
+#input{
+background-color:red;z-index: 2;position: relative;top: 95%;height: 2px;width: 2px;
+}
+#road{
+    display: block;
+    position: absolute;height: 100px;width:500%;bottom:0px;left:0px;right: 0px;
+    background-image: url("road.jpg");
+    background-repeat: repeat-x;
+    animation:road 4s linear infinite ;
+   z-index: 1;
+}
+#city{
+    display: block;
+    position: absolute;height: 250px;width:500%;bottom:100px;left:0px;right: 0px;
+    background-image: url("city.png");
+    background-repeat: repeat-x;
+    animation:road 20s linear infinite ;
+}
+@keyframes rotate{
+    to{
+        transform: rotate(-360deg);
+    }
+}
+@keyframes move{
+    from{
+        left:100%;
+    }
+    to{
+        left:0%;
+    }
+}
+#dino{
+height: 150px;width: 300px;position: absolute;bottom: 13%;left:0%;z-index: 3;
+}
+#obstacle{
+    position: absolute;bottom: 13%;left: 80%;height: 80px;width:150px;z-index: 3;object-fit: contain;
+    animation: move 3s infinite linear forwards;
+}
+#block{
+    position: relative;height:100px;width:200px;
+}
+.gameover{
+    position:absolute;
+    left:50%;
+    top:30%;
+    z-index:4;
+} 
+#button{
+    height:50px;width:200px;position: absolute;top: 50%;left: 48%;
+}
